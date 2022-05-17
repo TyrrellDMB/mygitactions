@@ -6,7 +6,11 @@ import math, random
 def generatePassword():
  
     # Declare all the variables that can be used in string
-  
+    string = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_-?'
+    Password = ""
+    length = len(string)
+    for i in range(16) :
+        Password += string[math.floor(random.random() * length)]
     
     return
 
